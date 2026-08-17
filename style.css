@@ -160,6 +160,31 @@ section{
     color: white;
 }
 
+.btnClose{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1001;
+}
+
+.btnClose:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
 .socials{
     display: flex;
     gap: 2rem;
@@ -349,6 +374,87 @@ footer ul li a{
 .copyright{
     font-size: 300;
     margin-top: 2rem;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    /* Center the modal */
+    justify-content: center;
+    align-items: center;
+
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    z-index: 1000;
+}
+
+.modal.show{
+    display: flex;
+}
+
+.modal-content{
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    margin: auto;
+}
+
+.modal-content h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.modal-images{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.desktop{
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.mobile{
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes slideIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @media(max-width:1280px){

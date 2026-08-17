@@ -105,37 +105,53 @@
         <div class="projects-grid">
 
             <div class="project-card">
-                <img src="assets/profile.JPG">
-                <h3>Project X</h3>
+                <img src="assets/trabacco.png">
+                <h3>Trabacco</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
+                    <div class="btn" onclick="openModal(1)">Sample</div>
                     <div class="btn">Github Repo</div>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="assets/profile.JPG">
-                <h3>Project X</h3>
+                <img src="assets/pos.png">
+                <h3>Point of Sale</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
+                    <div class="btn" onclick="openModal(2)">Sample</div>
                     <div class="btn">Github Repo</div>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="assets/profile.JPG">
-                <h3>Project X</h3>
+                <img src="assets/tabulation.png">
+                <h3>Tabulation</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
+                    <div class="btn" onclick="openModal(3)">Sample</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/attendance.png">
+                <h3>Attendance</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="btn-group">
+                    <div class="btn" onclick="openModal(4)">Sample</div>
                     <div class="btn">Github Repo</div>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <div id="modal" class="modal" onclick="if(event.target.id === 'modal') closeModal()">
+        <div class="modal-content">
+            <!-- Content will be dynamically populated -->
+        </div>
+    </div>
 
     <section class="contact" id="contact">
         <div class="input-box">
