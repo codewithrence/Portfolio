@@ -83,6 +83,55 @@ li a:hover::before{
     transform: scale(1.03);
 }
 
+.github-menu,
+.repo-links{
+    position: relative;
+}
+
+.github-links,
+.repo-link-list{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    min-width: 150px;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.github-links{
+    top: calc(100% + 0.6rem);
+    right: 0;
+}
+
+.repo-link-list{
+    bottom: calc(100% + 0.6rem);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.github-links a,
+.repo-link-list a{
+    display: block;
+    padding: 0.5rem 0.8rem;
+    color: black;
+    white-space: nowrap;
+}
+
+.github-links a:hover,
+.repo-link-list a:hover{
+    background: #f0f0f0;
+    border-radius: 0.5rem;
+}
+
+.github-menu:hover .github-links,
+.github-menu:focus-within .github-links,
+.repo-links:hover .repo-link-list,
+.repo-links:focus-within .repo-link-list{
+    display: block;
+}
+
 #menu-icon{
     font-size: 2rem;
     display: none;
@@ -310,6 +359,22 @@ section{
     background-color: white;
     color: black;
 }
+
+.repo-links span{
+    display: block;
+    border: 2px solid black;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.project-card:hover .repo-links span{
+    border-color: white;
+    color: white;
+}
+
 .project-card h3{
     font-size: 2rem;
     font-weight: 500;
@@ -334,6 +399,35 @@ section{
 
 .input-box input::placeholder{
     font-size: 3rem;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-item:hover{
+    background: black;
+    color: white;
+}
+
+.contact-item i{
+    font-size: 1.5rem;
 }
 
 .input{

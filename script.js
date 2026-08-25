@@ -10,23 +10,26 @@ const projects = [
     {
         id: 1,
         title: "Trabacco: An Application for Tracking and Monitoring of Tobacco Production with Geo-Mapping",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         desktopImage: "assets/trabacco.png",
         mobileImage: "assets/trabaccomobile.jpg"
     },
     {
         id: 2,
-        title: "Project X",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        desktopImage: "assets/profile.JPG",
-        mobileImage: "assets/profile.JPG"
+        title: "Point of Sale",
+        desktopImage: "assets/pos.png",
+        mobileImage: "assets/posmobile.jpg"
     },
     {
         id: 3,
-        title: "Project X",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        desktopImage: "assets/profile.JPG",
-        mobileImage: "assets/profile.JPG"
+        title: "Tabulation",
+        desktopImage: "assets/tabulation.png",
+        desktopImage2: "assets/tabulation1.png"
+    },
+    {
+        id: 4,
+        title: "Attendance Monitoring System",
+        desktopImage: "assets/attendance.png",
+        mobileImage: "assets/attendancemobile.jpg"
     }
 ];
 
@@ -41,7 +44,9 @@ function openModal(projectId){
             <h1>${project.title}</h1>
             <div class="modal-images">
                 <img class="desktop" src="${project.desktopImage}" alt="${project.title}">
-                <img class="mobile" src="${project.mobileImage}" alt="${project.title} mobile">
+                ${project.desktopImage2
+                    ? `<img class="desktop" src="${project.desktopImage2}" alt="${project.title} second image">`
+                    : `<img class="mobile" src="${project.mobileImage}" alt="${project.title} mobile">`}
             </div>
         `;
         document.getElementById("modal").classList.add("show");

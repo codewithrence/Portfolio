@@ -30,7 +30,13 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <button class="visit-btn">Visit Github</button>
+        <div class="github-menu">
+            <div class="visit-btn" tabindex="0">GitHub Profiles</div>
+            <div class="github-links">
+                <a href="https://github.com/codewithrence" target="_blank" rel="noopener noreferrer">Personal Account</a>
+                <a href="https://github.com/KurtLawrence8" target="_blank" rel="noopener noreferrer">School Account</a>
+            </div>
+        </div>
 
     </header>
 
@@ -51,8 +57,15 @@
                 </div>
 
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/codewithrence" target="_blank" rel="noopener noreferrer" aria-label="codewithrence GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://github.com/KurtLawrence8" target="_blank" rel="noopener noreferrer" aria-label="KurtLawrence8 GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kurt-lawrence-manandig-5a5153355" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
 
@@ -66,31 +79,31 @@
 
             <div class="grid">
                 <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-globe"></i>
                     <span>Web Development</span>
-                    <h3>5 years</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Web Technologies</h3>
+                    <p>Building responsive and dynamic websites using HTML, CSS, JavaScript, PHP, VueJS, ReactJS, NodeJS, and Laravel.</p>
                 </div>
 
                 <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Web Development</span>
-                    <h3>5 years</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Mobile Application Development</span>
+                    <h3>Mobile Technologies</h3>
+                    <p>Creating practical cross-platform mobile applications with Flutter and Ionic.</p>
                 </div>
 
                 <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Web Development</span>
-                    <h3>5 years</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i class="fa-solid fa-palette"></i>
+                    <span>User Interface</span>
+                    <h3>UI Frameworks</h3>
+                    <p>Designing clean, accessible, and consistent interfaces with Bootstrap, Tailwind CSS, and Material UI.</p>
                 </div>
 
                 <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Web Development</span>
-                    <h3>5 years</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Software Developer Intern</span>
+                    <h3>Radztech Corporation</h3>
+                    <p>Completed a four-month internship, contributing to software development tasks and gaining hands-on experience in a professional team environment.</p>
                 </div>
             </div>
 
@@ -107,40 +120,47 @@
             <div class="project-card">
                 <img src="assets/trabacco.png">
                 <h3>Trabacco</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>An application used to track tobacco production areas around Echague, Isabela.</p>
                 <div class="btn-group">
                     <div class="btn" onclick="openModal(1)">Sample</div>
-                    <div class="btn">Github Repo</div>
+                    <div class="repo-links">
+                        <span>Github Repo</span>
+                        <div class="repo-link-list">
+                            <a href="https://github.com/HELLO-JERICK/TRABACCO-BACKEND.git" target="_blank" rel="noopener noreferrer">Backend</a>
+                            <a href="https://github.com/HELLO-JERICK/TRABACCO-FRONTEND.git" target="_blank" rel="noopener noreferrer">Web</a>
+                            <a href="https://github.com/KurtLawrence8/trabacco_mobile.git" target="_blank" rel="noopener noreferrer">Mobile</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="project-card">
                 <img src="assets/pos.png">
                 <h3>Point of Sale</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>A simple point-of-sale system for small grocery stores and sari-sari stores to track sales and inventory.</p>
                 <div class="btn-group">
                     <div class="btn" onclick="openModal(2)">Sample</div>
-                    <div class="btn">Github Repo</div>
+                    <a href="https://darkgoldenrod-starling-821145.hostingersite.com/#/" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <img src="assets/tabulation.png">
                 <h3>Tabulation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>A tabulation system designed to manage scores and results for pageants.</p>
                 <div class="btn-group">
                     <div class="btn" onclick="openModal(3)">Sample</div>
-                    <div class="btn">Github Repo</div>
+                    <a href="https://github.com/KurtLawrence8/TABULATION-SYSTEM.git" class="btn" target="_blank" rel="noopener noreferrer">Github Repo</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <img src="assets/attendance.png">
                 <h3>Attendance</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>An attendance monitoring system for tracking students during school events.</p>
                 <div class="btn-group">
                     <div class="btn" onclick="openModal(4)">Sample</div>
-                    <div class="btn">Github Repo</div>
+                    <a href="https://github.com/KurtLawrence8/attendance_system.git" class="btn" target="_blank" rel="noopener noreferrer">Github Repo</a>
                 </div>
             </div>
 
@@ -157,12 +177,20 @@
         <div class="input-box">
             <h2 class="section-title">Contact Me</h2>
 
-            <div class="input">
-                <input type="text" placeholder="example@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
+            <div class="contact-details">
+                <a href="mailto:manandigkurtlawrenceb@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>manandigkurtlawrenceb@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/kurt-lawrence-manandig-5a5153355" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <a href="tel:+639674731649" class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09674731649</span>
+                </a>
             </div>
-
-            <div class="btn">Submit</div>
         </div>
     </section>
 
